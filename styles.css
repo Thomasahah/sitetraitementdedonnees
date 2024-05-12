@@ -1,0 +1,153 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin:0;
+  background:#282828;
+}
+header {
+  height:100vh;
+  background-image:url(img/backgroundheader.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:grid;
+  align-items:center;
+  justify-content:center;
+}
+header h1,h2 {
+  color:#ffffff;
+  text-align:center;
+}
+html{
+  scroll-behavior:smooth; 
+}
+.imgscroll{
+  display:flex;
+  transform:rotate(90deg);
+  justify-self: center;
+  transition:0.8s;
+}
+.container{
+  display:flex;
+  justofy-content:center;n
+}
+.imgscroll:hover{
+  cursor:pointer;
+  transform:rotate(90deg);
+  transition:0.8s;
+  -webkit-transition: bottom 1s;
+	-webkit-transform: translateY(35%) rotate(90deg) scale(1.3);
+}
+.imgscroll:hover{
+  transition:0.8s;
+}
+main {
+  padding:20px;
+  color:#ffffff;
+}
+main h3{
+  text-align:center;
+}
+main p{
+  text-align:center;
+}
+.nbetjeu{
+  display:flex;
+  align-items:center;
+  background:#0000006d;
+  border-radius:10px;
+  width:30vw;
+  padding:30px;
+  margin-bottom:20px;
+}
+.nb{
+  display:grid;
+  text-align:left;
+  padding-left:1vw;
+}
+.nb h3{
+  margin:0;
+}
+.liendetail{
+  color:#fff;
+}
+.containerdlsteam{
+  width:100%;
+  height:40vh;
+  display:flex;
+  justify-content:center;
+}
+.dlsteam{
+  background:rgba(0, 0, 0, 0.216);
+  border-radius:30px;
+  width:33vw;
+  display:grid;
+  padding:30px;
+}
+.dlsteam p{
+  font-size:1.2rem;
+}
+.bigtitle p{
+  font-size:1.4rem;
+  margin:0;
+}
+.containerlogoandbutton{
+  display:flex;
+  justify-content:center;
+}
+.logoandbutton{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:53%;
+}
+.button{
+  background:linear-gradient(100deg,rgb(3, 37, 190),rgb(114, 164, 255));
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-left:35px;
+  padding-right:35px;
+  border-radius:5px;
+}
+.button:hover{
+  background:linear-gradient(100deg,rgb(2, 24, 121),rgb(75, 107, 166));
+}
+.button:active{
+  background:linear-gradient(100deg,rgb(3, 37, 190),rgb(114, 164, 255));
+}
+.button p{
+  font-size:1.3rem;
+  color:#ffffff;
+}
+.logoandbutton a{
+  text-decoration:none;
+  color:#000;
+}
+.graphique {
+  background:blue;
+  width:80vw;
+  height:60vh;
+}
+footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-color:rgb(24, 24, 24);
+  height:15vh;
+  margin-top:3vh;
+  color:#fff;
+  padding:1.5em;
+}
+footer a{
+  text-decoration:none;
+  color:#4444f9;
+}
+footer a:hover{
+  color:#8f8f8f;
+}
+footer p{
+  font-size:0.8rem;
+}
+.logouniv{
+  padding-right:2vw;
+  padding-bottom:1vh;
+} 

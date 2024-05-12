@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/logosteam.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Statistiques Steam</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>STATISTIQUES STEAM</h1>
+            <h2>Découvrez la fréquence de joueur pour les 10 jeux les plus jouez sur Steam !</h2>
+        </div>
+        <div class="imgscroll">
+            <a href="#scroll"><img src="img/fleche.png" width="35" height="50" alt="image d'une flèche blanche cliquable"></a>
+        </div>
+    </header>
+    <main>
+        <scroll-page id="scroll">
+            <br>
+        </scroll-page>
+        <h3>Vous découvrirez ci-dessous les statistiques des jeux les plus joués chaques jours via la plateforme Steam.</h3><br>
+        <p>En analysant les courbes du nombre de joueurs sur chaque jeu, on peut déduire certaines choses.<br>Évidemment, on s'aperçoit que les joueurs jouent plus le week-end.<br>En effet, pour la plupart des jeux, le nombre de joueurs commence à croitre le jeudi ou le vendredi pour être au<br>plus haut le samedi et le dimanche, c'est ce qui donne ce côté un peu irrégulier avec des pics à une courbe.<br>Il existe des cas à part où la courbe se voit beaucoup augmentée en un jour lorsque des nouveautés sont disponibles<br>suite à des mises à jour,mises à jour qui peuvent beaucoup influencer la courbe, par exemple quand<br>les joueurs n'arrivent pas à se connecter.</p><br><br><br>
+        <h1>Counter-Strike: Global Offensive :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu3.html"><img src="img/cover/counterstrikeglobaloffensive.webp" width="80"/></a>
+            <div class="nb">
+                <h3>Pic : +1.1M joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2012
+                <a href="pagedetail/detailjeu3.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik3" height="80"></canvas><br><br>
+        <h1>Dota 2 :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu2.html"><img src="img/cover/dota2.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +1M joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2012
+                <a href="pagedetail/detailjeu2.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik2" height="80"></canvas><br><br>
+        <h1>Lost Ark :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu10.html"><img src="img/cover/lostark.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +1.3M joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2022
+                <a href="pagedetail/detailjeu10.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik10" height="80"></canvas><br><br>
+        <h1>PUBG: Battlegrounds :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu7.html"><img src="img/cover/pubgbattlegrounds.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +699k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2017
+                <a href="pagedetail/detailjeu7.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik7" height="80"></canvas><br><br>
+        <h1>Apex Legends :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu8.html"><img src="img/cover/apexlegends.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +511k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2019
+                <a href="pagedetail/detailjeu8.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik8" height="80"></canvas><br><br>
+        <h1>Grand Theft Auto V :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu5.html"><img src="img/cover/gtav.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +197k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2013
+                <a href="pagedetail/detailjeu5.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik5" height="80"></canvas><br><br>
+        <h1>NARAKA: BLADEPOINT :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu9.html"><img src="img/cover/narakabladepoint.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +165k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2021
+                <a href="pagedetail/detailjeu9.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik9" height="80"></canvas><br><br>
+        <h1>Team Fortress 2 :</h1>
+            <div class="nbetjeu">
+                <a href="pagedetail/detailjeu1.html"><img src="img/cover/teamfortress2.webp" width="90"></a>
+                <div class="nb">
+                    <h3>Pic : +139k joueurs (sur l'année 2022)</h3>
+                    Date de sortie : 2007
+                    <a href="pagedetail/detailjeu1.html" class="liendetail">Voir les détails du jeu</a>
+                </div>
+            </div>
+        <canvas id="graphik1" height="80"></canvas><br><br>
+        <h1>Wallpaper Engine :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu6.html"><img src="img/cover/wallpaperengine.webp" width="90"></a>
+            <div class="nb">
+                <h3>Pic : +118k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2016
+                <a href="pagedetail/detailjeu6.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik6" height="80"></canvas><br><br>
+        <h1>Terraria :</h1>
+        <div class="nbetjeu">
+            <a href="pagedetail/detailjeu4.html"></a><img src="img/cover/terraria.webp" width="90">
+            <div class="nb">
+                <h3>Pic : +120k joueurs (sur l'année 2022)</h3>
+                Date de sortie : 2011
+                <a href="pagedetail/detailjeu4.html" class="liendetail">Voir les détails du jeu</a>
+            </div>
+        </div>
+        <canvas id="graphik4" height="80"></canvas><br><br>
+        <h1>Tous les jeux :</h1>
+        <canvas id="graphik11" height="120"></canvas><br><br>
+        <p>Les statistiques qui figurent sur cette page sont le résultat d'analyses des bases de données fournies par Steam. Ces dernières sont donc consultables au lien suivant :</p>
+        <h2><a href="https://steamdb.info/">https://steamdb.info/</a></h2>
+        <div class="containerdlsteam">
+            <div class="dlsteam">
+                <div class="bigtitle">
+                    <p class="bigtitle"><b>En passant par Steam, profitez de nombreuses offres sur vos jeux !</b></p>
+                </div>
+                <p>Télécharger Steam ci-dessous :</p>
+                <div class="containerlogoandbutton">
+                    <div class="logoandbutton">
+                        <img src="img/logosteam.webp" height="65" width="65">
+                        <a href="https://store.steampowered.com/about/?l=french"><div class="button">
+                            <p><b>Télécharger</b></p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Télécharger la base de données xlsx de cette année ici :<br><a href="https://docs.google.com/spreadsheets/d/1Q21WiDpl8ld6v6r4pCaJFWfmhips1E9m/edit?usp=sharing&ouid=103660718046990217398&rtpof=true&sd=true">Google spreadsheets</a></p>
+    </main>
+    <footer>
+        <div class="textfooter">
+            <p>Site réalisé par Thomas Devred et Fathallah Zobir,<br>étudiants de la formation MMI à l'Université Gustave Eiffel.</p> 
+        </div>
+        <div class="imgfooter">
+            <img class="logouniv" src="img/logouniv.webp" height="50">
+            <img src="img/logosteam.webp" height="70" width="70">
+        </div>
+    </footer>
+</body>
+</html>
+<script src="data.json"></script>
+<script src="script.js"></script>
